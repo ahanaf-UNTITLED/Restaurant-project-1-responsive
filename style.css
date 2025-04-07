@@ -1,0 +1,440 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FAF9F7 ;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+/* small devices (potrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .col-sm-1{
+        width: 8.33%;
+    }
+    .col-sm-2{
+        width: 16.66%;
+    }
+    .col-sm-3{
+        width: 25%;
+    }
+    .col-sm-4{
+        width: 33.33%;
+    }
+    .col-sm-5{
+        width: 41.66%;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-7{
+        width: 58.33%;
+    }
+    .col-sm-8{
+        width: 66.66%;
+    }
+    .col-sm-9{
+        width: 75%;
+    }
+    .col-sm-10{
+        width: 83.33%;
+    }
+    .col-sm-11{
+        width: 91.66%;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+    
+}
+
+
+/* for medium screeen 768px and up */
+
+@media (min-width: 768px) {
+
+    .col-mdm-1{
+        width: 8.33%;
+    }
+    .col-mdm-2{
+        width: 16.66%;
+    }
+    .col-mdm-3{
+        width: 25%;
+    }
+    .col-mdm-4{
+        width: 33.33%;
+    }
+    .col-mdm-5{
+        width: 41.66%;
+    }
+    .col-mdm-6{
+        width: 50%;
+    }
+    .col-mdm-7{
+        width: 58.33%;
+    }
+    .col-mdm-8{
+        width: 66.66%;
+    }
+    .col-mdm-9{
+        width: 75%;
+    }
+    .col-mdm-10{
+        width: 83.33%;
+    }
+    .col-mdm-11{
+        width: 91.66%;
+    }
+    .col-mdm-12{
+        width: 100%;
+    }
+    
+}
+
+
+/* for large screen 992px and up */
+
+@media (min-width: 992px) {
+
+    .logo-div{
+        text-align: left;
+    }
+
+   nav ul{
+    display: flex;
+    justify-content: flex-end;
+   }
+
+   nav ul li a:hover{
+    transform: scale(1.1);
+   }
+
+   /* banner starts here */
+
+   #banner-section{
+    position: relative;
+    height: 100vh;
+   }
+
+   .banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   }
+
+    /* banner starts here */
+
+    .col-lrg-1{
+        width: 8.33%;
+    }
+    .col-lrg-2{
+        width: 16.66%;
+    }
+    .col-lrg-3{
+        width: 25%;
+    }
+    .col-lrg-4{
+        width: 33.33%;
+    }
+    .col-lrg-5{
+        width: 41.66%;
+    }
+    .col-lrg-6{
+        width: 50%;
+    }
+    .col-lrg-7{
+        width: 58.33%;
+    }
+    .col-lrg-8{
+        width: 66.66%;
+    }
+    .col-lrg-9{
+        width: 75%;
+    }
+    .col-lrg-10{
+        width: 83.33%;
+    }
+    .col-lrg-11{
+        width: 91.66%;
+    }
+    .col-lrg-12{
+        width: 100%;
+    }
+    
+}
+
+
+/* header design starts here */
+
+.logo-div img{
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 5px solid brown;
+    border-radius: 50%;
+}
+
+header{
+    background-color: #F5ECE6;
+    padding: 1% 1%;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    line-height: 70px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    background-color: azure;
+    color: #7D5260;
+    border-radius: 20px;
+    
+}
+
+
+
+/* header design ends here */
+
+/* banner design starts here */
+
+#banner{
+    width: 100%;
+    height: 75vh;
+    background-image: url(cover.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-content{
+    padding: 50px 10px;
+    text-align: center;
+   
+    font-family: dancing script;
+}
+
+.banner-content h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 6rem;
+    color: #dfafb4;
+}
+
+.banner-content p{
+    width: 300px;
+    margin: 15px auto;
+    font-size: 3rem;
+    color: #FAF9F7;
+}
+
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: dancing script;
+    font-weight: bolder;
+    background-color: #dfafb4;
+    border: none;
+    color:#FAF9F7;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 15px;
+
+}
+
+.btn:hover{
+    color: #7D5260;
+   transform: scale(1.2);
+}
+
+/* banner design ends here */
+
+/* about section starts here */
+#about{
+    /* margin: 20px 0; */
+    padding: 15px;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    background-color: #F5ECE6;
+}
+
+.about-content{
+    color: #333333;
+}
+
+.about-content h1{
+    font-size: 3rem;
+}
+
+.about-content h2{
+    font-size: 1.2rem;
+}
+
+.about-content p{
+    font-size: 1rem;
+}
+
+/* about section ends here */
+
+
+/* menu-card starts here */
+
+
+#menu-section{
+    padding: 1%;
+}
+
+
+
+.card-body{
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+    width: 200px;
+   border: 1px solid #333333;
+}
+
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.item-desc{
+    background-color: #F5ECE6;
+    color: #333333;
+}
+
+.item-name{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.item-desc>p{
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+/* menu-card starts ends here */
+
+
+/* contact-details starts here */
+
+#contact{
+    padding: 1% ;
+    background-color: #333333;
+   
+}
+
+.contact-details{
+    color: white;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.map{
+    width: 100%;
+    height: 250px;
+}
+
+
+.contact-details p, address{
+    font-size: 0.8rem;
+}
+/* contact-details ends here */
+
+
+
+
+/* footer starts here */
+
+footer{
+    padding: 1%;
+    color:#333333;
+    background-color: #F5ECE6;
+}
+
+footer p{
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.social-menus{
+    text-align: center;
+}
+
+.icon-style{
+    color: #333333;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    margin: 0 10px;
+    transition: 0.4s;
+    padding: 7px;
+}
+
+.icon-style:hover{
+    transform: scale(1.1);
+}
+
+
+/* footer ends here */
